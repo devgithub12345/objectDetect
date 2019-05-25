@@ -7,7 +7,7 @@ import time
 import argparse
 import datetime
 import numpy as np
-from queue import Queue
+import Queue as queue
 from threading import Thread
 
 MODEL_BASE = '/home/anoop/models/research'
