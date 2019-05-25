@@ -7,7 +7,10 @@ import time
 import argparse
 import datetime
 import numpy as np
-import Queue as queue
+try: 
+    import queue
+except ImportError:
+    import Queue as queue
 from threading import Thread
 
 MODEL_BASE = '/home/anoop/models/research'
