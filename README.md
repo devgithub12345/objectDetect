@@ -60,7 +60,7 @@ You specify one of the following models.
 
 ```
 # git clone https://github.com/anoopjeerige/realtimeCV
-# cd ~/realtimeCV/obj_detect_multi
+# cd ~/objectDetect/obj_detect_multi
 # export FLASK_APP=detector.app
 # flask run
 ```
