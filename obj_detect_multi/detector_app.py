@@ -13,7 +13,7 @@ except ImportError:
     import Queue as queue
 from threading import Thread
 
-MODEL_BASE = '/home/anoop/models/research'
+MODEL_BASE = '/opt/VideoDetection/models/research'
 sys.path.append(MODEL_BASE)
 sys.path.append(MODEL_BASE + '/object_detection')
 sys.path.append(MODEL_BASE + '/slim')
@@ -42,7 +42,7 @@ app = Flask(__name__)
 
 
 
-PATH_TO_CKPT = '/home/anoop/tensorflow/ssd_inception_v2_coco_11_06_2017/frozen_inference_graph.pb'
+PATH_TO_CKPT = '/opt/VideoDetection/models/research/object_detection/ssd_inception_v2_coco_11_06_2017/frozen_inference_graph.pb'
 PATH_TO_LABELS = MODEL_BASE + '/object_detection/data/mscoco_label_map.pbtxt'
 
 content_types = {'jpg': 'image/jpeg',
